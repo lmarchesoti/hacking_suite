@@ -23,33 +23,33 @@ This template was made with c++ in mind, but I believe it can be easily adapted 
 
 >├── desired_output
 
->│   ├── boundary
+>│      ├── boundary
 
->│   ├── correct
+>│      ├── correct
 
->│   ├── given
+>│      ├── given
 
->│   ├── incorrect
+>│      ├── incorrect
 
->│   └── large
+>│      └── large
 
 >├── input
 
->│   ├── boundary
+>│      ├── boundary
 
->│   ├── correct
+>│      ├── correct
 
->│   ├── given
+>│      ├── given
 
->│   ├── incorrect
+>│      ├── incorrect
 
->│   └── large
+>│      └── large
 
 >├── lib
 
->│   ├── run.sh
+>│      ├── run.sh
 
->│   └── test_framework.hpp
+>│      └── test_framework.hpp
 
 >├── LICENSE
 
@@ -61,9 +61,9 @@ This template was made with c++ in mind, but I believe it can be easily adapted 
 
 >└── src
 
->    ├── main.cpp
+>        ├── main.cpp
 
->    └── main_test.cpp
+>        └── main_test.cpp
 
 
 ## TODO
