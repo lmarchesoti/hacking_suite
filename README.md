@@ -12,7 +12,7 @@ This template was made with c++ in mind, but I believe it can be easily adapted 
 
 **automated build** through a *makefile*. This simplifies the up-arrow compile and run workflow to a make command. A makefile is also useful to simplify compilation within command-line debuggers, such as gdb. Make targets include: clean(n), compile(c), test(t) and run(r).
 
-**automated unit test** through a minimalistic framework. The *lib/test_framework.hpp* provides for lightweight testing which might be desired for critical functionality without overburdening the workflow.
+**automated unit test** through the *tests\_main.cpp* file. Just implement your tests as regular c++ code(need to provide your own prints). It is easy enough to include a precompiled header in the lib directory to use macros for additional convenience. **WARNING** This functionality is implemented by using a sed script that extracts the main function out of your *main.cpp* file and puts the result in the *src/functions.cpp* file. The *test\_main.cpp* must include this functions.cpp file to see any implemented method without conflict with your main program's main function. It is imperative that you have a well-formed *int main* line that ends in a line containing only a closing bracket *}* and that no line before this is composed like so(just properly indent your code). I wish this was not the case, but it is the best I could do so far. I also think that maybe the *functions.cpp* file should be included elsewhere, but none of the other folders match and I feel dumb creating a folder just for it. :P
 
 **source and test templates** with standard functionality. These should save up some time and energy when starting a new hack.
 
@@ -21,7 +21,7 @@ This template was made with c++ in mind, but I believe it can be easily adapted 
 
 >.
 
->├── desired_output
+>├── desired\_output/
 
 >│      ├── boundary
 
@@ -33,7 +33,7 @@ This template was made with c++ in mind, but I believe it can be easily adapted 
 
 >│      └── large
 
->├── input
+>├── input/
 
 >│      ├── boundary
 
@@ -45,26 +45,24 @@ This template was made with c++ in mind, but I believe it can be easily adapted 
 
 >│      └── large
 
->├── lib
+>├── lib/
 
->│      ├── run.sh
-
->│      └── test_framework.hpp
+>│      └── run.sh
 
 >├── LICENSE
 
 >├── makefile
 
->├── output
+>├── output/
 
 >├── README.md
 
->└── src
+>└── src/
 
 >        ├── main.cpp
 
->        └── main_test.cpp
+>        └── main\_test.cpp
 
 
 ## TODO
-Choose a test framework and create the main\_test.cpp template.
+Include precompiled-header test frameworks and example templates
