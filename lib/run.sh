@@ -19,7 +19,7 @@ for test_case in `ls input`; do
     END=$(date -u +"%s.%N")
     TIME=$(echo "$END - $START" | bc -l)
 
-    printf "\n%s : %.3f\n" $test_case $TIME
+    printf "\n%s : %.3f ms\n" $test_case $TIME
     diff output/$test_case desired_output/$test_case
     echo "-------------------------------------------"
 
