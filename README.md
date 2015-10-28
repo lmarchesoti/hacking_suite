@@ -16,5 +16,55 @@ This template was made with c++ in mind, but I believe it can be easily adapted 
 
 **source and test templates** with standard functionality. These should save up some time and energy when starting a new hack.
 
+## Project Structure
+
+
+>.
+
+>├── desired_output
+
+>│      ├── boundary
+
+>│      ├── correct
+
+>│      ├── given
+
+>│      ├── incorrect
+
+>│      └── large
+
+>├── input
+
+>│      ├── boundary
+
+>│      ├── correct
+
+>│      ├── given
+
+>│      ├── incorrect
+
+>│      └── large
+
+>├── lib
+
+>│      ├── run.sh
+
+>│      └── test_framework.hpp
+
+>├── LICENSE
+
+>├── makefile
+
+>├── output
+
+>├── README.md
+
+>└── src
+
+>        ├── main.cpp
+
+>        └── main_test.cpp
+
+
 ## TODO
 Choose a test framework and create the main\_test.cpp template.
