@@ -1,34 +1,14 @@
 PARAMS=-lm
-CC=g++
 TARGET=prog
 
-# commands
-COMPILE=$(CC) src/main.cpp -o $(TARGET) $(PARAMS)
-TEST=
-RUN=sh lib/run.sh
-CLEAN=rm -f $(TARGET) output/*
-
 # targets with shortcuts
-compile:
-	$(COMPILE)
+compile c: src/main.cpp
+	g++ src/main.cpp -o $(TARGET) $(PARAMS)
 
-c:
-	$(COMPILE)
+test t:
 
-test:
-	$(TEST)
+run r: lib/run.sh
+	sh lib/run.sh
 
-t:
-	$(TEST)
-
-run:
-	$(RUN)
-
-r:
-	$(RUN)
-
-clean:
-	$(CLEAN)
-
-n:
-	$(CLEAN)
+clean n:
+	rm -f $(TARGET) output/*
