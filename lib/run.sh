@@ -17,11 +17,11 @@ for test_case in `ls input`; do
     START=$(date -u +"%s.%N")
     ./prog < input/$test_case > output/$test_case
     END=$(date -u +"%s.%N")
-		TIME=$(echo "$END - $START" | bc -l)
+    TIME=$(echo "$END - $START" | bc -l)
 
-		printf "\n%s : %.3f\n" $test_case $TIME
+    printf "\n%s : %.3f\n" $test_case $TIME
     diff output/$test_case desired_output/$test_case
-		echo "-------------------------------------------"
+    echo "-------------------------------------------"
 
   fi
 
