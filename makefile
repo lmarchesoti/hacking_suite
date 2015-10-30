@@ -6,12 +6,12 @@ TEST=test
 compile c: src/main.cpp
 	g++ src/main.cpp -o $(TARGET) $(PARAMS)
 
-test t: src/test_main.cpp lib/extract_functions.sh
+test t: src/test_main.cpp
 	sh lib/extract_functions.sh 
 	g++ src/test_main.cpp -o $(TEST) -I lib/ $(PARAMS)
 	./test
 
-run r: lib/run.sh
+run r:
 	sh lib/run.sh
 
 clean n:
