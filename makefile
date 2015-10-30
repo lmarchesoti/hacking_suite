@@ -1,4 +1,4 @@
-PARAMS=-lm
+PARAMS=-std=c++0x -lm
 TARGET=prog
 TEST=test
 
@@ -8,7 +8,7 @@ compile c: src/main.cpp
 
 test t: src/test_main.cpp lib/extract_functions.sh
 	sh lib/extract_functions.sh 
-	g++ src/test_main.cpp -o $(TEST) -I lib/
+	g++ src/test_main.cpp -o $(TEST) -I lib/ $(PARAMS)
 	./test
 
 run r: lib/run.sh
