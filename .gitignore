@@ -2,4 +2,4 @@ prog
 test
 *.swp*
 src/functions.cpp
-output/*
+output/placeholder
