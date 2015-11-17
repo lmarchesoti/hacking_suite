@@ -1,4 +1,5 @@
 #include "functions.cpp"
+#include <cassert>
 
 /* test prototypes */
 void test();
@@ -15,5 +16,6 @@ int main(){
 /* test specifications */
 void test(){
 
+	assert(true);
 	return;
 }
