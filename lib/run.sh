@@ -8,7 +8,7 @@ echo "-------------------------------------------"
 
 # run prog for each valid test in input
 # calculates time to run each instance
-# prints difference in output from desired
+# prints difference in output from target
 for test_case in `ls input`; do
 
   if [ -s input/$test_case ]
@@ -20,7 +20,7 @@ for test_case in `ls input`; do
     TIME=$(echo "$END - $START" | bc -l)
 
     printf "\n%s : %.3fs\n" $test_case $TIME
-    diff output/$test_case desired_output/$test_case
+    diff output/$test_case target/$test_case
     echo "-------------------------------------------"
 
   fi

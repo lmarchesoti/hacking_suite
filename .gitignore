@@ -1,5 +1,6 @@
 prog
 test
 *.swp*
-src/functions.cpp
-output/*
+/src/functions.cpp
+/output/*
+!/output/.placeholder

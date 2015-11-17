@@ -8,7 +8,7 @@ This template was made with c++ in mind, but I believe it can be easily adapted 
 
 ## Features
 
-**automated test** against custom inputs. The *lib/run.sh* script looks at all inputs in the *input/* folder and tests the program against it, putting the output in the *output/* folder. It also measures execution time(in %s.%ms format) and prints the difference between the actual output and the desired one, which is located in the *desired_output/* folder. The many-files input style is ideal for programs that take one input at a time, and can be used to organize by theme the inputs for programs that can take multiple ones(some example themes are already provided). Corresponding files in all these folders should have the same name. Empty files are ignored.
+**automated test** against custom inputs. The *lib/run.sh* script looks at all inputs in the *input/* folder and tests the program against it, putting the output in the *output/* folder. It also measures execution time(in %s.%ms format) and prints the difference between the actual output and the target one, which is located in the *target* folder. The many-files input style is ideal for programs that take one input at a time, and can be used to organize by theme the inputs for programs that can take multiple ones(some example themes are already provided). Corresponding files in all these folders should have the same name. Empty files are ignored.
 
 **automated build** through a *makefile*. This simplifies the up-arrow compile and run workflow to a make command. A makefile is also useful to simplify compilation within command-line debuggers, such as gdb. Make targets include: clean(n), compile(c), test(t), run(r) and all(a).
 
@@ -21,7 +21,7 @@ This template was made with c++ in mind, but I believe it can be easily adapted 
 
 >.
 
->├── desired\_output/
+>├── target/
 
 >│      ├── boundary
 
