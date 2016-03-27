@@ -23,27 +23,7 @@ This template was made with c++ in mind, but I believe it can be easily adapted 
 
 >├── target/
 
->│      ├── boundary
-
->│      ├── correct
-
->│      ├── given
-
->│      ├── incorrect
-
->│      └── large
-
 >├── input/
-
->│      ├── boundary
-
->│      ├── correct
-
->│      ├── given
-
->│      ├── incorrect
-
->│      └── large
 
 >├── lib/
 
