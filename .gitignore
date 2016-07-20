@@ -1,6 +1,6 @@
-prog
-test
+*/prog
+*/test
 *.swp*
-/src/functions.cpp
-/output/*
-!/output/.placeholder
+*//src/functions.cpp
+*/output/*
+!*/output/.placeholder
