@@ -1,4 +1,4 @@
-# hacking suite
+# hacking suite (hack/cpp)
 
 ## Motivation
 
